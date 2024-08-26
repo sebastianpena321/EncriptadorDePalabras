@@ -1,0 +1,218 @@
+/* Variables de colores y tamaños */
+:root {
+    --background: #F3F5FC;
+    --foreground: #343A40;
+    --card-background: #ffffff;
+    --card-foreground: #1f2937;
+    --primary: #111827;
+    --primary-foreground: #f9fafb;
+    --secondary: #D8DFE8;
+    --secondary-foreground: #111827;
+    --muted: #0A3871;
+    --muted-foreground: #495057;
+    --color-numero-dos: #495057;
+    --border: #d1d5db;
+    --ring: #111827;
+    --radius: 0.5rem;
+    --color-texto-descricion:#0A3871;
+}
+
+/* Estilos base para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Contenedor principal con flexbox */
+.contenedor-flex {
+    display: flex;
+    margin-left: 200px; 
+    margin-right: 20px;
+}
+
+.fondo {
+    background-color: var(--background);
+}
+
+.padding-grande {
+    padding:1rem;
+    margin-top: 10px;
+}
+
+.redondeado {
+    border-radius: var(--background);
+}
+
+
+.flex-uno {
+    flex: 1;
+}
+
+
+.margen-arriba {
+    margin-left: -1%;
+}
+
+.margen-arriba-nulo {
+    margin-top: 100;
+}
+
+.ancho-total {
+    width: 100%;
+    height: 180%;
+}
+
+.padding-pequeno {
+    padding: 0.5rem;
+}
+
+.borde {
+    border: 1px solid var(--background);
+}
+
+.sin-contorno:focus {
+    outline: none;
+}
+
+.anillo-focus:focus {
+    box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.1);
+}
+
+.boton-secundario,
+.boton-mute {
+    width:  150%;
+    padding: 0.5rem 0.5rem; 
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     height: 57px;
+     
+}
+
+/* Estilos específicos para los botones */
+.boton-secundario {
+ 
+   background-color: var(--muted);
+   color: var( --card-background);
+   border: 1px solid #0A3871
+}
+
+.boton-mute {
+    background-color: var(--secondary);
+    color: var(--color-texto-descricion);
+    border: 1px solid #0A3871
+}
+
+/* Efectos de hover para los botones */
+.boton-hover-secundario:hover {
+    background-color: rgb(1, 32, 92);
+}
+
+.boton-hover-mute:hover {
+    background-color: rgba(229, 231, 235, 0.8);
+}
+
+.texto-secundario {
+    color: var(--secondary-fore  ground);
+}
+
+.texto-1 {
+    color: var(--muted-foreround );
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Ajusta el texto largo */
+    text-align: center; /* Centra el texto */
+    padding: 0.5rem; /* Añade un poco de espacio interno */
+    max-width: 100%; /* Asegura que el texto no se desborde del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
+}
+
+.fondo-tarjeta {
+    background-color: var(--card-background);
+}
+
+.padding-mediano {
+    position: absolute;
+    padding: 10px;
+    width: 370px;
+    height: 590px;
+    left: 79%;
+    transform: translateX(-50%);
+}
+
+.sombra-media {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.texto-principal {
+    color: var(--primary);
+}
+
+.texto-2 {
+    color: var(--color-numero-dos);
+}
+
+.texto-grande {
+    font-size: 1.125rem;
+}
+
+.fuente-negrita {
+    font-weight: 600;
+}
+
+.margen-inferior {
+    margin-bottom: 0.5rem;
+}
+
+.imagen {
+    display: block;
+    padding: 10%;
+}
+
+.contenido-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 32px;
+}
+
+/* Alineación de los botones */
+.boton-contenedor {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 1rem; /* Espaciado entre botones */
+    margin-top: 1rem;
+}
+
+.boton-contenedor {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espaciado entre botones */
+    margin-top: 1%;
+}
+
+/* Estilos del textarea */
+textarea {
+   
+    background-color: #F3F5FC;
+    resize: none; /* Impide que el usuario redimensione el área de texto */
+    font-size: 30px;
+    color: #0A3871; /* Color del texto */
+    font-family: Arial, sans-serif; /* Ajusta la fuente si es necesario */
+    margin: 6%;
+    height: 150px; /* Ajusta la altura del textarea si es necesario */
+    overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del área de texto */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
+
+}
+
+
+ textarea::placeholder{
+        color: #0A3871; /* Color del texto */
+}
